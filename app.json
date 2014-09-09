@@ -1,0 +1,21 @@
+{
+  "name": "yuru-char-voter",
+  "keywords": [
+    "casperjs"
+  ],
+  "env": {
+    "BUILDPACK_URL": "https://github.com/leesei/heroku-buildpack-casperjs.git",
+    "CHARACTER_ID": {
+      "description": "YURUCHAR ID ( http://www.yurugp.jp/vote/detail.php?id=#{THIS ID} )"
+    },
+    "EMAIL": {
+      "description": "your email address"
+    },
+    "PASSWORD": {
+      "description": "your password"
+    }
+  },
+  "addons": [
+    "scheduler:standard"
+  ]
+}
